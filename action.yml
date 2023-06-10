@@ -26,7 +26,7 @@ runs:
   using: "composite"
   steps:
     - run: |
-        cargo install --git ${{ inputs.cargo-appimage-repo }}
+        RUSTFLAGS="-C target-feature=+crt-static" cargo install --git ${{ inputs.cargo-appimage-repo }} --target x86_64-unknown-linux-gnu
       shell: bash
     - run: |
         curl -L -o ${{ inputs.appimagetool-path }} ${{ inputs.appimagetool-url }}

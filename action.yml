@@ -31,4 +31,6 @@ runs:
     - run: |
         curl -o ${{ inputs.appimagetool-path }} ${{ inputs.appimagetool-url }}
         curl -o ${{ inputs.runtime-path }} ${{ inputs.runtime-url }}
+        chmod +x ${{ inputs.appimagetool-path }}
+        chmod +x ${{ inputs.runtime-path }}
       shell: bash

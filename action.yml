@@ -8,7 +8,7 @@ inputs:
   appimagetool-url:
     description: 'URL of appimagetool'
     required: false
-    default: https://github.com/AppImage/AppImageKit/releases/download/13/appimagetool-x86_64.AppImage
+    default: https://github.com/eunomia-bpf/prepare-cargo-appimage/raw/main/appimagetool-x86_64.AppImage
   appimagetool-path:
     description: 'Where to save appimagetool'
     required: false
@@ -16,7 +16,7 @@ inputs:
   runtime-url:
     description: 'URL of the appimage runtime'
     required: false
-    default: https://github.com/AppImage/type2-runtime/releases/download/continuous/runtime-fuse2-x86_64
+    default: https://github.com/eunomia-bpf/prepare-cargo-appimage/raw/main/runtime-x86_64
   runtime-path:
     description: 'Where to save runtime'
     required: false
